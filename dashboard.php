@@ -1,5 +1,6 @@
 <?php 
   include_once("templates/header.php");
+  include_once("process/orders.php");
 ?>
   <style>
     <?php include 'css/styles.css'; ?>
