@@ -1,6 +1,9 @@
 <?php 
   include_once("templates/header.php");
 ?>
+  <style>
+    <?php include 'css/styles.css'; ?>
+  </style>
   <div id="main-container">
     <div class="container">
       <div class="row">
