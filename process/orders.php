@@ -91,5 +91,25 @@
 
   } else if($method === 'POST') {
 
+    // Verificando tipo de requisição
+    $type = $_POST["type"];
+
+    // Deletar pedido
+    if($type === "delete") {
+      $pizzaId = $_POST["id"];
+
+      $deleteQuery = $conn->prepare("DELETE FROM pedidos WHERE pizza_id = :pizza_id;");
+
+      $deleteQuery->bindParam(":pizza_id", $pizzaId, PDO::PARAM_INT);
+
+      $deleteQuery->execute();
+
+      $_SESSION["msg"] = "Pedido removido com sucesso!";
+      $_SESSION["status"] = "success";
+    }
+
+    // Retorna usuário para dashboard
+    header("Location: ../dashboard.php");
+
   }
 ?>
