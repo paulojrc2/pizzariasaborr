@@ -1,7 +1,11 @@
 <?php 
   include_once("templates/header.php");
   include_once("process/pizza.php");
+
 ?>
+  <style>
+    <?php include 'css/media.css'; ?>
+  </style>
   <div id="main-banner">
     <h1>Faça seu pedido</h1>
   </div>

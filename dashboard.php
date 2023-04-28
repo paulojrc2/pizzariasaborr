@@ -4,6 +4,7 @@
 ?>
   <style>
     <?php include 'css/styles.css'; ?>
+    <?php include 'css/media.css'; ?>
   </style>
   <div id="main-container">
     <div class="container">
